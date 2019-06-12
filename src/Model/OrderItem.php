@@ -155,7 +155,7 @@ class OrderItem extends OrderAttribute
                 $unique[$field] = $this->$field;
             }
         }
-        $this->extend('updateuniquedata',$unique)
+        $this->extend('updateuniquedata',$unique);
         return $unique;
     }
 
